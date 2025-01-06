@@ -22,30 +22,22 @@ const BackgroundImage = styled.div`
   }
 
   &.image-1 {
-    background-image: url('/assets/products/speedo-case/sc-01.jpg');
+    background-image: url('/assets/products/ruckus-rings/rr-01.jpg');
   }
 
   &.image-2 {
-    background-image: url('/assets/products/speedo-case/sc-02.jpg');
+    background-image: url('/assets/products/ruckus-rings/rr-02.jpg');
   }
 
   &.image-3 {
-    background-image: url('/assets/products/speedo-case/sc-03.jpg');
+    background-image: url('/assets/products/ruckus-rings/rr-03.jpg');
   }
 
   &.image-4 {
-    background-image: url('/assets/products/speedo-case/sc-04.jpg');
+    background-image: url('/assets/products/ruckus-rings/rr-04.jpg');
   }
   &.image-5 {
-    background-image: url('/assets/products/speedo-case/sc-05.jpg');
-  }
-
-  &.image-6 {
-    background-image: url('/assets/products/speedo-case/sc-06.jpg');
-  }
-
-  &.image-7 {
-    background-image: url('/assets/products/speedo-case/sc-07.jpg');
+    background-image: url('/assets/products/ruckus-rings/rr-05.jpg');
   }
 `;
 
@@ -54,7 +46,7 @@ const RuckusRings = ({
     images = []
 }) => {
   const [currentImage, setCurrentImage] = useState(0);
-  const totalImages = 7; // Total number of images
+  const totalImages = 5; // Total number of images
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -84,26 +76,27 @@ const RuckusRings = ({
           <BackgroundImage
             className={`image-5 ${currentImage === 4 ? "visible" : ""}`}
           />
-          <BackgroundImage
-            className={`image-6 ${currentImage === 5 ? "visible" : ""}`}
-          />
-          <BackgroundImage
-            className={`image-7 ${currentImage === 6 ? "visible" : ""}`}
-          />
         </ImageWrapper>
         <Description>
           The Rev Render Ruckus Rings gives you an option to dress up the PVC plate on the back right side
           of your bike. With a ton of colors to choose from you can add matching accents to your bike or mix
           and match for a very colorful effect. A lot of Ruckus owners straight up delete this plate but
-          that requires metal and paint work. This is an non-invasive and extremely inexpensive alternative.
+          that requires metal and paint work. This is an non-invasive and extremely inexpensive alternative to the
+          permanent removal of the plate.
 
           <p>
             The rings are printed from a very strong PLA and have been fitted perfectly to the hole. When
             these snap in to place, the are in place and are not going anywhere. A perfect accent to set
-            your bike apart from all the rest. Dare to be different...
+            your bike apart from all the rest. Custom is always he way to go when it comes to looks!! Dare to be
+            different...
           </p>
+          <Notes>
+              <BoldText>Note:</BoldText> For multi-color orders there is an additional $5 fee.</Notes>
           <Price>
-            <BoldText>Set of 5 rings:</BoldText> $20 (includes shipping)
+            <BoldText>Set of 5 single color rings:</BoldText> $20 (includes shipping)
+          </Price>
+          <Price>
+            <BoldText>Set of 5 multi-color rings:</BoldText> $25 (includes shipping)
           </Price>
         </Description>
     </Container>

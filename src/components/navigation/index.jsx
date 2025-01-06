@@ -9,7 +9,6 @@ const Navigation = ({
     showLogo,
     setShowSubMenu,
 }) => {
-    console.log("showLogo: ", showLogo);
     const navLinks = [
         { label: "Mission", value: "MISSION", mouseIn: () => null, mouseOut: () => null },
         { label: "Bios", value: "BIOS", mouseIn: () => null, mouseOut: () => null },

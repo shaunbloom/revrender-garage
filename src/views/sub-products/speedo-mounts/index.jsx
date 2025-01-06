@@ -94,12 +94,16 @@ const SpeedoMounts = ({
                   Ruckus mounts will be available soon for both open and closed handlebars.
               </Notes>
 
+              <Links>
+                <BoldText>Amazon Speedo Link:</BoldText> <a href="https://a.co/d/2VwNNYf" target="_blank">https://a.co/d/2VwNNYf</a>
+              </Links>
+
               <Price>
-                <BoldText>Bare metal mount:</BoldText> $?? (includes shipping)
+                <BoldText>Bare metal mount:</BoldText> $35 (includes shipping)
               </Price>
 
               <Price>
-                <BoldText>Powder coated mount:</BoldText> $?? (Includes shipping)
+                <BoldText>Powder coated mount:</BoldText> $45 (Includes shipping)
               </Price>
             </Description>
         </Container>

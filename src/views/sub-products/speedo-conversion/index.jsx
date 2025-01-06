@@ -117,11 +117,11 @@ const SpeedoConversion = ({
                 </Links>
 
                 <Price>
-                  <BoldText>Base Kit:</BoldText> $75
+                  <BoldText>Base Kit:</BoldText> $75 (Includes shipping)
                 </Price>
 
                 <Price>
-                  <BoldText>Full Custom Kit:</BoldText> $100 (Includes 2 tone speedo case and powder coated mount)
+                  <BoldText>Full Custom Kit:</BoldText> $100 (2 tone speedo case and powder coated mount - Includes shipping)
                 </Price>
               </p>
             </Description>

@@ -1,17 +1,10 @@
 import React, { useEffect, useState } from "react";
 import FadingCarousel from '../../../components/carousel/index.jsx';
 import styled from "@emotion/styled";
+import { BoldText, Container, Description, ImageWrapper, Notes, Links, Price } from "../layout/index.jsx";
 
 const Title = styled.h2`
     text-align: left;
-`;
-
-const ImageWrapper = styled.div`
-  position: relative;
-  width: 450px;
-  height: 420px;
-  border: 1px solid #fff;
-  overflow: hidden;
 `;
 
 const BackgroundImage = styled.div`
@@ -58,8 +51,8 @@ const SpeedoWireHarness = ({
 
   return (
       <>
+      <Title>Speedometer Wiring Harness</Title>
       <Container>
-        <Title>Speedometer Wiring Harness</Title>
         <ImageWrapper>
           <BackgroundImage
             className={`image-1 ${currentImage === 0 ? "visible" : ""}`}
@@ -72,15 +65,21 @@ const SpeedoWireHarness = ({
           />
         </ImageWrapper>
         <Description>
-          The Rev Render speedometer wire harness allows you to convert the
+          The Rev Render speedometer wire harness allows you to convert the pin connectors from the suggested
+          speedometer 9 pin plug to map the wires and match them up to the stock GY6 wire harness. This is a plug and
+          play setup which makes it an incredibly quick and easy upgrade to install.
 
           <p>
-            The rings are printed from a very strong PLA and have been fitted perfectly to the hole. When
-            these snap in to place, the are in place and are not going anywhere. A perfect accent to set
-            your bike apart from all the rest. Dare to be different...
+            For those looking to mount there own 88 speedometer you will just need the mount and the case. Wiring your
+            speedometer up to your bike will be up to you. That being said most of these electronics coming with
+            excellent wiring diagrams which should allow you to repin the speedo to match the GY6 9 pin connector.
+            GY6 wiring diagrams can be found on the web.
           </p>
+          <Notes>
+              <BoldText>Note:</BoldText> For Gen 4 Maddogs you simply need the case and mount. You might have to extend the speedo wires a bit but
+              no wire harness is needed for this as the bike is already pinned correctly.</Notes>
           <Price>
-            <BoldText>Set of 5 rings:</BoldText> $20 (includes shipping)
+            <BoldText>Single harness:</BoldText> $25 (includes shipping)
           </Price>
         </Description>
     </Container>

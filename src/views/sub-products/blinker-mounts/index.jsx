@@ -1,17 +1,10 @@
 import React, { useEffect, useState } from "react";
 import FadingCarousel from '../../../components/carousel/index.jsx';
 import styled from "@emotion/styled";
+import { BoldText, Container, Description, ImageWrapper, Notes, Links, Price } from "../layout/index.jsx";
 
 const Title = styled.h2`
     text-align: left;
-`;
-
-const ImageWrapper = styled.div`
-  position: relative;
-  width: 450px;
-  height: 420px;
-  border: 1px solid #fff;
-  overflow: hidden;
 `;
 
 const BackgroundImage = styled.div`
@@ -70,6 +63,7 @@ const DoubleBlinkerMounts = ({
   return (
       <>
         <Title>Double Blinker Mounts</Title>
+        <Container>
         <ImageWrapper>
           <BackgroundImage
             className={`image-1 ${currentImage === 0 ? "visible" : ""}`}
@@ -90,7 +84,30 @@ const DoubleBlinkerMounts = ({
             className={`image-6 ${currentImage === 5 ? "visible" : ""}`}
           />
         </ImageWrapper>
-      </>
+        <Description>
+          The Rev Render Double Blinker Mount adaptors allow you to convert the single hole mounts on the back of your
+          Gen 1 Maddogs to a double hole mount allowing for two blinkers on each side. Why would you need two blinkers
+          on each side of your brake light you ask... Because it looks insanely cool. Besides the Killer esthetics this
+          adapter offers it also gives you the ability to gain that much more visibility while riding.
+
+          <p>
+            When using The double blinker mounts with the lights that we suggest you will gain running lights, brake
+            lights as well as blinker lights. The visibility gained from this upgrade compared to the stock lights is
+            incredible. It's an insanely unique look and again, offers much more visibility day or night.
+          </p>
+          <Notes>
+            <BoldText>Note:</BoldText> This kit includes a left and right double blinker mount as well as the two mounting bolts needed. The
+            mounting bolts and nuts can be powder coated to a color of your choice for an additional fee.
+          </Notes>
+          <Price>
+            <BoldText>Pair of double blinker mounts:</BoldText> $27 (includes shipping)
+          </Price>
+          <Price>
+            <BoldText>Pair of double blinker mounts (w/powder coated bolts):</BoldText> $35 (includes shipping)
+          </Price>
+        </Description>
+      </Container>
+    </>
   );
 };
 

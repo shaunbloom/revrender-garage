@@ -17,6 +17,7 @@ export const Description = styled.div`
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   height: auto;
+  min-height: 381px;
   width: 650px;
   overflow-wrap: break-word;
   box-shadow: inset 0 0 0 5px black;

@@ -43,6 +43,7 @@ const Mission = ({
             <p>
             Let’s build something extraordinary together!
             </p>
+            <p>~ RevRender Garage</p>
           </MissionStatement>
         </>
     )

@@ -15,7 +15,7 @@ const Bios = ({
                 passion for drawing detailed portraits of famous figures. This talent eventually turned into an online
                 art business, where Shaun began selling his work to admirers worldwide.
               <p>
-                As a chi/ld, Shaun’s love for building with Legos laid the foundation for a lifelong passion for creating.
+                As a child, Shaun’s love for building with Legos laid the foundation for a lifelong passion for creating.
                 His fascination with computers started in middle school, learning BASIC programming, which later evolved
                 into a career. After landing a job at Nintendo of America, Shaun was reintroduced to programming through
                 HTML, paving the way for a 25-year career in software engineering.

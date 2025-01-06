@@ -47,6 +47,10 @@ const BackgroundImage = styled.div`
   &.image-7 {
     background-image: url('/assets/products/speedo-case/sc-07.jpg');
   }
+
+    &.image-8 {
+      background-image: url('/assets/products/speedo-case/sc-08.jpg');
+    }
 `;
 
 
@@ -66,8 +70,8 @@ const SpeedoConversion = ({
 
   return (
       <>
+      <Title>Speedometer Case</Title>
       <Container>
-        <Title>Speedometer Case</Title>
         <ImageWrapper>
           <BackgroundImage
             className={`image-1 ${currentImage === 0 ? "visible" : ""}`}
@@ -90,19 +94,23 @@ const SpeedoConversion = ({
           <BackgroundImage
             className={`image-7 ${currentImage === 6 ? "visible" : ""}`}
           />
+          <BackgroundImage
+            className={`image-8 ${currentImage === 7 ? "visible" : ""}`}
+          />
         </ImageWrapper>
         <Description>
-          The Rev Render Speedometer case allows you to enclose an 88mm speedometer of your choice and gives you an alternate way to mount it (Mount not included). A few scooters out there sell their bikes with open backed speedometers
+          The Rev Render Speedometer case allows you to enclose an 88mm speedometer of your choice and gives you an
+          alternate way to mount it (Mount not included). A few scooters out there sell their bikes with open backed
+          speedometers which we think is not very esthetically pleasing. Gen 4 Maddogs are like this and the process of
+          enclosing it cleans up the look and makes it very sleek and badass looking.
 
           <p>
-            This kit will allow you to remove a gauge cluster and replace it with an 88mm digital speedometer which give
-            a much more custom sleek look. This is kit is great to replace the three plastic fake chrome gauge
-            cluster that are on a lot of the DAIX Chinese scooters, including the Gen 1 Maddogs. It also offer the
-            ability to cover the Gen 4 Maddog speedometers and give them a sleek custom look while hiding the wires
-            and mounting bolts. (Ruckus mounts coming soon.)
+            The case can be use with any 88mm speedometer but obviously we recommend the one below. The cases can be
+            customized to match your scooter. Currently we offer a 2 color option but we can always do more colors at an
+            additional cost. The case comes with the mounting hardware to attach the end cap to the case.
           </p>
             <Notes>
-              <BoldText>Note:</BoldText> Speedometer is not include in the convesion kit. (Supporting 3rd party electronics is not
+              <BoldText>Note:</BoldText> Speedometer is not included with the case nor is the mount. (Supporting 3rd party electronics is not
               something we're willing to take on at this point.)
             </Notes>
 
@@ -111,11 +119,11 @@ const SpeedoConversion = ({
             </Links>
 
             <Price>
-              <BoldText>Base Kit:</BoldText> $75 (includes shipping)
+              <BoldText>Single color:</BoldText> $30 (includes shipping)
             </Price>
 
             <Price>
-              <BoldText>Full Custom Kit:</BoldText> $100 (Includes 2 tone speedo case and powder coated mount and shipping)
+              <BoldText>Multi color:</BoldText> $40 (Includes shipping)
             </Price>
         </Description>
     </Container>
