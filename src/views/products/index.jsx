@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navigation from "../../components/navigation/index.jsx";
-import { ProductLink } from "./layout/index.jsx";
+import { ProductHeader, ProductLink } from "./layout/index.jsx";
 import styled from "@emotion/styled";
 
 const Title = styled.h2`
@@ -13,12 +13,18 @@ const Products = ({
     return (
         <>
           <Title>RevRender Products</Title>
+          <ProductHeader>Maddog</ProductHeader>
           <ProductLink>
-            - <a onClick={() => setCurrentView("BLINKER_MOUNTS")}>Double Blinker Mounts</a>
+            - <a onClick={() => setCurrentView("BLINKER_MOUNTS")}>Maddog Gen 1 Double Blinker Mounts</a>
+          </ProductLink>
+          <ProductHeader>Ruckus</ProductHeader>
+          <ProductLink>
+            - <a onClick={() => setCurrentView("RUCKUS_DOUBLE_BLINKER_MOUNTS")}>Ruckus Double Blinker Mounts</a>
           </ProductLink>
           <ProductLink>
-            - <a onClick={() => setCurrentView("RUCKUS_RINGS")}>Ruckus Rings</a>
+            - <a onClick={() => setCurrentView("RUCKUS_RINGS")}>PCV Plate Rings</a>
           </ProductLink>
+          <ProductHeader>Universal</ProductHeader>
           <ProductLink>
             - <a onClick={() => setCurrentView("SPEEDO_CASE")}>Speedometer Case</a>
           </ProductLink>
