@@ -62,7 +62,7 @@ const DoubleBlinkerMounts = ({
 
   return (
       <>
-        <Title>Double Blinker Mounts</Title>
+        <Title>Maddog Gen 1 Double Blinker Mounts</Title>
         <Container>
         <ImageWrapper>
           <BackgroundImage
