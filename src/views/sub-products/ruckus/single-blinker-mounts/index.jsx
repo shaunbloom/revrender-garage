@@ -22,34 +22,30 @@ const BackgroundImage = styled.div`
   }
 
   &.image-1 {
-    background-image: url('/assets/products/Ruckus/double-blinker-mounts/rdbm-01.jpg');
+    background-image: url('/assets/products/Ruckus/single-blinker-mounts/rsrbm-01.jpg');
   }
   &.image-2 {
-    background-image: url('/assets/products/Ruckus/double-blinker-mounts/rdbm-02.jpg');
+    background-image: url('/assets/products/Ruckus/single-blinker-mounts/rsrbm-02.jpg');
   }
   &.image-3 {
-    background-image: url('/assets/products/Ruckus/double-blinker-mounts/rdbm-03.jpg');
+    background-image: url('/assets/products/Ruckus/single-blinker-mounts/rsrbm-03.jpg');
   }
   &.image-4 {
-    background-image: url('/assets/products/Ruckus/double-blinker-mounts/rdbm-04.jpg');
+    background-image: url('/assets/products/Ruckus/single-blinker-mounts/rsrbm-04.jpg');
   }
   &.image-5 {
-    background-image: url('/assets/products/Ruckus/double-blinker-mounts/rdbm-05.jpg');
+    background-image: url('/assets/products/Ruckus/single-blinker-mounts/rsrbm-05.jpg');
   }
   &.image-6 {
-    background-image: url('/assets/products/Ruckus/double-blinker-mounts/rdbm-06.jpg');
-  }
-  &.image-7 {
-    background-image: url('/assets/products/Ruckus/double-blinker-mounts/rdbm-07.jpg');
+    background-image: url('/assets/products/Ruckus/single-blinker-mounts/rsrbm-06.jpg');
   }
 `;
 
-
-const RuckusDoubleBlinkerMounts = ({
+const RuckusSingleBlinkerMounts = ({
     images = []
 }) => {
   const [currentImage, setCurrentImage] = useState(0);
-  const totalImages = 7; // Total number of images
+  const totalImages = 6; // Total number of images
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -61,7 +57,7 @@ const RuckusDoubleBlinkerMounts = ({
 
   return (
       <>
-        <Title>Ruckus Double Rear Blinker Mounts</Title>
+        <Title>Ruckus Single Rear Blinker Mounts</Title>
         <Container>
         <ImageWrapper>
           <BackgroundImage
@@ -82,20 +78,17 @@ const RuckusDoubleBlinkerMounts = ({
           <BackgroundImage
             className={`image-6 ${currentImage === 5 ? "visible" : ""}`}
           />
-          <BackgroundImage
-            className={`image-7 ${currentImage === 6 ? "visible" : ""}`}
-          />
         </ImageWrapper>
         <Description>
-          The Rev Render Ruckus Double Blinker mounts gives you the ability to mount double blinkers on each side of the
-          back of the Ruckus frame's lower back bar. These accompany the Ruckus license plate mount that we make as well.
+          The Rev Render Ruckus Single Blinker mounts gives you the ability to mount a single blinker light on each side
+          in the back of the Ruckus frame's lower bar. These accompany the Ruckus license plate mount that we make as well.
           These mounts allow you to gain a lot more visibility as you have now increased the amount of signal lighting to
           the back of your bike.
 
           <p>
             The lights used in the product shots are from Amazon and can support brake and running lights which is what
-            gives you all of the increased visibility. Now you have 5 running lights and brake lights to accompany the
-            double blinkers. Not only does it give you a very badass look but you can standout amongst your fellow
+            gives you all of the increased visibility. Now you have 3 running lights and brake lights to accompany the
+            new blinkers. Not only does it give you a very badass look but you can standout amongst your fellow
             riders and be a lot safer out there riding. FYI there are different designs of these same light sets.
           </p>
           <Links>
@@ -105,13 +98,12 @@ const RuckusDoubleBlinkerMounts = ({
           </Links>
           <Notes>
               <BoldText>Notes:</BoldText> If you want to match all of the blinkers front and back of the bike you can
-              order the following two kits. Two <a href="https://www.amazon.com/dp/B0CHHW36X2?ref=ppx_yo2ov_dt_b_fed_asin_title" target="_blank">pairs
-              (front and rear)</a> and for the second pair in back you can order one <a href="https://www.amazon.com/dp/B0BX8P4R6T?ref=ppx_yo2ov_dt_b_fed_asin_title" target="_blank"> pair of
-              rear blinker lights</a> above. The lights in the front are different from the back as they have white
+              order the following kit. Two <a href="https://www.amazon.com/dp/B0CHHW36X2?ref=ppx_yo2ov_dt_b_fed_asin_title" target="_blank">pairs
+              (front and rear)</a>. The lights in the front are different from the back as they have white
               running lights and no brake light option.
           </Notes>
           <Price>
-            <BoldText>Set of 2 mounts:</BoldText> $30 (includes shipping)
+            <BoldText>Set of 2 mounts:</BoldText> $25 (includes shipping)
           </Price>
         </Description>
     </Container>
@@ -119,4 +111,4 @@ const RuckusDoubleBlinkerMounts = ({
   );
 };
 
-export default RuckusDoubleBlinkerMounts;
+export default RuckusSingleBlinkerMounts;

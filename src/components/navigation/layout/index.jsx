@@ -61,7 +61,7 @@ export const SubLink = styled.a`
 export const SubHeader = styled.a`
     display: block;
     padding: 5px;
-    cursor: pointer;
+    cursor: inherit;
     vertical-align: top;
     text-align: left;
     font-weight: bold;
@@ -76,6 +76,7 @@ export const SubHeader = styled.a`
 
 export const Spacer = styled.div`
     height: 20px;
+    cursor: pointer;
 `;
 
 export const Logo = styled.a`

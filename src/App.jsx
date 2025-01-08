@@ -9,7 +9,10 @@ import SpeedoWireHarness from "./views/sub-products/speedo-wire-harness/index.js
 import BlinkerMounts from "./views/sub-products/blinker-mounts/index.jsx";
 import RuckusRings from "./views/sub-products/ruckus-rings/index.jsx";
 import RuckusDoubleBlinkerMounts from "./views/sub-products/ruckus/dbl-blinker-mounts/index.jsx";
+import RuckusSingleBlinkerMounts from "./views/sub-products/ruckus/single-blinker-mounts/index.jsx";
+import RuckusFrontBlinkerMounts from "./views/sub-products/ruckus/front-blinker-mounts/index.jsx";
 import SpeedoMounts from "./views/sub-products/speedo-mounts/index.jsx";
+import FuelPumpMount from "./views/sub-products/fuel-pump-mount/index.jsx";
 import Navigation from "./components/navigation/index.jsx"
 import Bios from "./views/bios/index.jsx";
 import { useState } from "react";
@@ -75,6 +78,12 @@ function App() {
             return <SpeedoMounts/>;
         case "RUCKUS_DOUBLE_BLINKER_MOUNTS":
             return <RuckusDoubleBlinkerMounts/>;
+        case "RUCKUS_SINGLE_BLINKER_MOUNTS":
+            return <RuckusSingleBlinkerMounts/>;
+        case "RUCKUS_FRONT_BLINKER_MOUNTS":
+            return <RuckusFrontBlinkerMounts/>;
+        case "FUEL_PUMP_MOUNT":
+            return <FuelPumpMount/>;
         default:
             return <Splash onNavClick={onNavClick} />;
         }
@@ -88,19 +97,25 @@ function App() {
         showLogo={showLogo}
         setShowSubMenu={setShowSubMenu}
       >{showSubMenu && <SubMenu onMouseOut={() => setShowSubMenu(false)}>
-            <SubHeader className="header" onMouseOver={() => setShowSubMenu(true)}>Maddog</SubHeader>
-            <SubLink className={shouldUnderLine("BLINKER_MOUNTS")} onClick={() => onSetCurrentView("BLINKER_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Double Blinker Mounts</SubLink>
-            <Spacer/>
+            <SubHeader className="header" onMouseOver={() => setShowSubMenu(true)}>Maddog Gen 1</SubHeader>
+                <SubLink className={shouldUnderLine("BLINKER_MOUNTS")} onClick={() => onSetCurrentView("BLINKER_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Double Blinker Mounts</SubLink>
+                <Spacer onMouseOver={() => setShowSubMenu(true)}/>
+            <SubHeader className="header" onMouseOver={() => setShowSubMenu(true)}>Maddog Gen 4 & 5</SubHeader>
+                <SubLink className={shouldUnderLine("FUEL_PUMP_MOUNT")} onClick={() => onSetCurrentView("FUEL_PUMP_MOUNT")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Fuel Pump Mount</SubLink>
+                <Spacer onMouseOver={() => setShowSubMenu(true)}/>
             <SubHeader onMouseOver={() => setShowSubMenu(true)}>Ruckus</SubHeader>
-            <SubLink className={shouldUnderLine("RUCKUS_DOUBLE_BLINKER_MOUNTS")} onClick={() => onSetCurrentView("RUCKUS_DOUBLE_BLINKER_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Double Blinker Mounts</SubLink>
-            <SubLink className={shouldUnderLine("RUCKUS_RINGS")} onClick={() => onSetCurrentView("RUCKUS_RINGS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>PCV Plate Rings</SubLink>
-            <Spacer/>
+                <SubLink className={shouldUnderLine("RUCKUS_FRONT_BLINKER_MOUNTS")} onClick={() => onSetCurrentView("RUCKUS_FRONT_BLINKER_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Front Blinker Mounts</SubLink>
+                <SubLink className={shouldUnderLine("RUCKUS_SINGLE_BLINKER_MOUNTS")} onClick={() => onSetCurrentView("RUCKUS_SINGLE_BLINKER_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Single Rear Blinker Mounts</SubLink>
+                <SubLink className={shouldUnderLine("RUCKUS_DOUBLE_BLINKER_MOUNTS")} onClick={() => onSetCurrentView("RUCKUS_DOUBLE_BLINKER_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Double Rear Blinker Mounts</SubLink>
+                <SubLink className={shouldUnderLine("RUCKUS_RINGS")} onClick={() => onSetCurrentView("RUCKUS_RINGS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>PCV Plate Rings</SubLink>
+                <Spacer onMouseOver={() => setShowSubMenu(true)}/>
             <SubHeader onMouseOver={() => setShowSubMenu(true)}>Universal</SubHeader>
-            <SubLink className={shouldUnderLine("SPEEDO_CASE")} onClick={() => onSetCurrentView("SPEEDO_CASE")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Speedo Case</SubLink>
-            <SubLink className={shouldUnderLine("SPEEDO_CONVERSION")} onClick={() => onSetCurrentView("SPEEDO_CONVERSION")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Speedo Conversion Kit</SubLink>
-            <SubLink className={shouldUnderLine("SPEEDO_MOUNTS")} onClick={() => onSetCurrentView("SPEEDO_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Speedo Mounts</SubLink>
-            <SubLink className={shouldUnderLine("SPEEDO_WIRE_HARNESS")} onClick={() => onSetCurrentView("SPEEDO_WIRE_HARNESS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Speedo Wire Harness</SubLink>
-          </SubMenu>}</Navigation>
+                <SubLink className={shouldUnderLine("SPEEDO_CASE")} onClick={() => onSetCurrentView("SPEEDO_CASE")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Speedo Case</SubLink>
+                <SubLink className={shouldUnderLine("SPEEDO_CONVERSION")} onClick={() => onSetCurrentView("SPEEDO_CONVERSION")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Speedo Conversion Kit</SubLink>
+                <SubLink className={shouldUnderLine("SPEEDO_MOUNTS")} onClick={() => onSetCurrentView("SPEEDO_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Speedo Mounts</SubLink>
+                <SubLink className={shouldUnderLine("SPEEDO_WIRE_HARNESS")} onClick={() => onSetCurrentView("SPEEDO_WIRE_HARNESS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Speedo Wire Harness</SubLink>
+          </SubMenu>}
+      </Navigation>
       {renderView()}
     </ViewWrapper>
   )
