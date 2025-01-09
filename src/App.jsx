@@ -7,7 +7,8 @@ import SpeedoConversion from "./views/sub-products/speedo-conversion/index.jsx";
 import SpeedoCase from "./views/sub-products/speedo-case/index.jsx";
 import SpeedoWireHarness from "./views/sub-products/speedo-wire-harness/index.jsx";
 import BlinkerMounts from "./views/sub-products/blinker-mounts/index.jsx";
-import RuckusRings from "./views/sub-products/ruckus-rings/index.jsx";
+import RuckusPcvRings from "./views/sub-products/ruckus/pcv-rings/index.jsx";
+import RuckusSideCaps from "./views/sub-products/ruckus/side-caps/index.jsx";
 import RuckusDoubleBlinkerMounts from "./views/sub-products/ruckus/dbl-blinker-mounts/index.jsx";
 import RuckusSingleBlinkerMounts from "./views/sub-products/ruckus/single-blinker-mounts/index.jsx";
 import RuckusFrontBlinkerMounts from "./views/sub-products/ruckus/front-blinker-mounts/index.jsx";
@@ -72,8 +73,10 @@ function App() {
             return <SpeedoWireHarness/>;
         case "BLINKER_MOUNTS":
             return <BlinkerMounts/>;
+        case "RUCKUS_SIDE_CAPS":
+            return <RuckusSideCaps/>;
         case "RUCKUS_RINGS":
-            return <RuckusRings/>;
+            return <RuckusPcvRings/>;
         case "SPEEDO_MOUNTS":
             return <SpeedoMounts/>;
         case "RUCKUS_DOUBLE_BLINKER_MOUNTS":
@@ -107,6 +110,7 @@ function App() {
                 <SubLink className={shouldUnderLine("RUCKUS_FRONT_BLINKER_MOUNTS")} onClick={() => onSetCurrentView("RUCKUS_FRONT_BLINKER_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Front Blinker Mounts</SubLink>
                 <SubLink className={shouldUnderLine("RUCKUS_SINGLE_BLINKER_MOUNTS")} onClick={() => onSetCurrentView("RUCKUS_SINGLE_BLINKER_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Single Rear Blinker Mounts</SubLink>
                 <SubLink className={shouldUnderLine("RUCKUS_DOUBLE_BLINKER_MOUNTS")} onClick={() => onSetCurrentView("RUCKUS_DOUBLE_BLINKER_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Double Rear Blinker Mounts</SubLink>
+                <SubLink className={shouldUnderLine("RUCKUS_SIDE_CAPS")} onClick={() => onSetCurrentView("RUCKUS_SIDE_CAPS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Side Caps</SubLink>
                 <SubLink className={shouldUnderLine("RUCKUS_RINGS")} onClick={() => onSetCurrentView("RUCKUS_RINGS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>PCV Plate Rings</SubLink>
                 <Spacer onMouseOver={() => setShowSubMenu(true)}/>
             <SubHeader onMouseOver={() => setShowSubMenu(true)}>Universal</SubHeader>
