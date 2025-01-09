@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import FadingCarousel from '../../../components/carousel/index.jsx';
+import FadingCarousel from '../../../../components/carousel/index.jsx';
 import styled from "@emotion/styled";
-import { BoldText, Container, Description, ImageWrapper, Notes, Links, Price } from "../layout/index.jsx";
+import { BoldText, Container, Description, ImageWrapper, Notes, Links, Price } from "../../layout/index.jsx";
 
 const Title = styled.h2`
     text-align: left;
@@ -22,27 +22,27 @@ const BackgroundImage = styled.div`
   }
 
   &.image-1 {
-    background-image: url('/assets/products/ruckus-rings/rr-01.jpg');
+    background-image: url('/assets/products/Ruckus/pcv-rings/rr-01.jpg');
   }
 
   &.image-2 {
-    background-image: url('/assets/products/ruckus-rings/rr-02.jpg');
+    background-image: url('/assets/products/Ruckus/pcv-rings/rr-02.jpg');
   }
 
   &.image-3 {
-    background-image: url('/assets/products/ruckus-rings/rr-03.jpg');
+    background-image: url('/assets/products/Ruckus/pcv-rings/rr-03.jpg');
   }
 
   &.image-4 {
-    background-image: url('/assets/products/ruckus-rings/rr-04.jpg');
+    background-image: url('/assets/products/Ruckus/pcv-rings/rr-04.jpg');
   }
   &.image-5 {
-    background-image: url('/assets/products/ruckus-rings/rr-05.jpg');
+    background-image: url('/assets/products/Ruckus/pcv-rings/rr-05.jpg');
   }
 `;
 
 
-const RuckusRings = ({
+const PvcPlateRings = ({
     images = []
 }) => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -58,7 +58,7 @@ const RuckusRings = ({
 
   return (
       <>
-        <Title>Ruckus Rings</Title>
+        <Title>PCV Plate Rings</Title>
         <Container>
         <ImageWrapper>
           <BackgroundImage
@@ -78,7 +78,7 @@ const RuckusRings = ({
           />
         </ImageWrapper>
         <Description>
-          The Rev Render Ruckus Rings gives you an option to dress up the PVC plate on the back right side
+          The Rev Render Ruckus PCV Plate Rings gives you an option to dress up the PVC plate on the back right side
           of your bike. With a ton of colors to choose from you can add matching accents to your bike or mix
           and match for a very colorful effect. A lot of Ruckus owners straight up delete this plate but
           that requires metal and paint work. This is an non-invasive and extremely inexpensive alternative to the
@@ -93,10 +93,10 @@ const RuckusRings = ({
           <Notes>
               <BoldText>Note:</BoldText> For multi-color orders there is an additional $5 fee.</Notes>
           <Price>
-            <BoldText>Set of 5 single color rings:</BoldText> $20 (includes shipping)
+            <BoldText>Set of 5 single color rings:</BoldText> $15 (includes shipping)
           </Price>
           <Price>
-            <BoldText>Set of 5 multi-color rings:</BoldText> $25 (includes shipping)
+            <BoldText>Set of 5 multi-color rings:</BoldText> $20 (includes shipping)
           </Price>
         </Description>
     </Container>
@@ -104,4 +104,4 @@ const RuckusRings = ({
   );
 };
 
-export default RuckusRings;
+export default PvcPlateRings;

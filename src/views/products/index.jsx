@@ -32,6 +32,9 @@ const Products = ({
               - <a onClick={() => setCurrentView("RUCKUS_DOUBLE_BLINKER_MOUNTS")}>Double Blinker Mounts</a>
             </ProductLink>
             <ProductLink>
+              - <a onClick={() => setCurrentView("RUCKUS_SIDE_CAPS")}>Side Caps</a>
+            </ProductLink>
+            <ProductLink>
               - <a onClick={() => setCurrentView("RUCKUS_RINGS")}>PCV Plate Rings</a>
             </ProductLink>
             <ProductHeader>Universal</ProductHeader>
