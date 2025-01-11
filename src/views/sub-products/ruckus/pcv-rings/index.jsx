@@ -39,6 +39,9 @@ const BackgroundImage = styled.div`
   &.image-5 {
     background-image: url('/assets/products/Ruckus/pcv-rings/rr-05.jpg');
   }
+  &.image-6 {
+      background-image: url('/assets/products/Ruckus/pcv-rings/rr-06.jpg');
+    }
 `;
 
 
@@ -46,7 +49,7 @@ const PvcPlateRings = ({
     images = []
 }) => {
   const [currentImage, setCurrentImage] = useState(0);
-  const totalImages = 5; // Total number of images
+  const totalImages = 6; // Total number of images
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -75,6 +78,9 @@ const PvcPlateRings = ({
           />
           <BackgroundImage
             className={`image-5 ${currentImage === 4 ? "visible" : ""}`}
+          />
+          <BackgroundImage
+            className={`image-6 ${currentImage === 5 ? "visible" : ""}`}
           />
         </ImageWrapper>
         <Description>
