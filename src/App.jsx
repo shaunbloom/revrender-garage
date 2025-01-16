@@ -3,6 +3,7 @@ import './App.css';
 import Splash from "./views/splash/index.jsx";
 import Products from "./views/products/index.jsx";
 import Mission from "./views/mission/index.jsx";
+import HeadlightMount from "./views/sub-products/headlight-mount/index.jsx";
 import SpeedoConversion from "./views/sub-products/speedo-conversion/index.jsx";
 import SpeedoCase from "./views/sub-products/speedo-case/index.jsx";
 import SpeedoWireHarness from "./views/sub-products/speedo-wire-harness/index.jsx";
@@ -87,6 +88,8 @@ function App() {
             return <RuckusFrontBlinkerMounts/>;
         case "FUEL_PUMP_MOUNT":
             return <FuelPumpMount/>;
+        case "HEADLIGHT_MOUNT":
+            return <HeadlightMount/>;
         default:
             return <Splash onNavClick={onNavClick} />;
         }
@@ -114,6 +117,7 @@ function App() {
                 <SubLink className={shouldUnderLine("RUCKUS_RINGS")} onClick={() => onSetCurrentView("RUCKUS_RINGS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>PCV Plate Rings</SubLink>
                 <Spacer onMouseOver={() => setShowSubMenu(true)}/>
             <SubHeader onMouseOver={() => setShowSubMenu(true)}>Universal</SubHeader>
+                <SubLink className={shouldUnderLine("HEADLIGHT_MOUNT")} onClick={() => onSetCurrentView("HEADLIGHT_MOUNT")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Single Headlight Conversion Mount</SubLink>
                 <SubLink className={shouldUnderLine("SPEEDO_CASE")} onClick={() => onSetCurrentView("SPEEDO_CASE")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Speedo Case</SubLink>
                 <SubLink className={shouldUnderLine("SPEEDO_CONVERSION")} onClick={() => onSetCurrentView("SPEEDO_CONVERSION")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Speedo Conversion Kit</SubLink>
                 <SubLink className={shouldUnderLine("SPEEDO_MOUNTS")} onClick={() => onSetCurrentView("SPEEDO_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Speedo Mounts</SubLink>
