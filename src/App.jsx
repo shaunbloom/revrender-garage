@@ -20,6 +20,7 @@ import Bios from "./views/bios/index.jsx";
 import { useState } from "react";
 import styled from "@emotion/styled";
 import { NavLink, Spacer, SubHeader, SubLink, SubMenu } from "./components/navigation/layout/index.jsx";
+import { LinkContainer, LeftSideLinks, RightSideLinks } from "./views/products/layout/index.jsx";
 
 const ViewWrapper = styled.div`
     width: 100%;
@@ -103,6 +104,8 @@ function App() {
         showLogo={showLogo}
         setShowSubMenu={setShowSubMenu}
       >{showSubMenu && <SubMenu onMouseOut={() => setShowSubMenu(false)}>
+          <LinkContainer onMouseOver={() => setShowSubMenu(true)}>
+            <LeftSideLinks onMouseOver={() => setShowSubMenu(true)}>
             <SubHeader className="header" onMouseOver={() => setShowSubMenu(true)}>Maddog Gen 1</SubHeader>
                 <SubLink className={shouldUnderLine("BLINKER_MOUNTS")} onClick={() => onSetCurrentView("BLINKER_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Double Blinker Mounts</SubLink>
                 <Spacer onMouseOver={() => setShowSubMenu(true)}/>
@@ -116,12 +119,16 @@ function App() {
                 <SubLink className={shouldUnderLine("RUCKUS_SIDE_CAPS")} onClick={() => onSetCurrentView("RUCKUS_SIDE_CAPS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Side Caps</SubLink>
                 <SubLink className={shouldUnderLine("RUCKUS_RINGS")} onClick={() => onSetCurrentView("RUCKUS_RINGS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>PCV Plate Rings</SubLink>
                 <Spacer onMouseOver={() => setShowSubMenu(true)}/>
+              </LeftSideLinks>
+              <RightSideLinks onMouseOver={() => setShowSubMenu(true)}>
             <SubHeader onMouseOver={() => setShowSubMenu(true)}>Universal</SubHeader>
                 <SubLink className={shouldUnderLine("HEADLIGHT_MOUNT")} onClick={() => onSetCurrentView("HEADLIGHT_MOUNT")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Single Headlight Conversion Mount</SubLink>
                 <SubLink className={shouldUnderLine("SPEEDO_CASE")} onClick={() => onSetCurrentView("SPEEDO_CASE")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Speedo Case</SubLink>
                 <SubLink className={shouldUnderLine("SPEEDO_CONVERSION")} onClick={() => onSetCurrentView("SPEEDO_CONVERSION")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Speedo Conversion Kit</SubLink>
                 <SubLink className={shouldUnderLine("SPEEDO_MOUNTS")} onClick={() => onSetCurrentView("SPEEDO_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Speedo Mounts</SubLink>
                 <SubLink className={shouldUnderLine("SPEEDO_WIRE_HARNESS")} onClick={() => onSetCurrentView("SPEEDO_WIRE_HARNESS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Speedo Wire Harness</SubLink>
+              </RightSideLinks>
+            </LinkContainer>
           </SubMenu>}
       </Navigation>
       {renderView()}

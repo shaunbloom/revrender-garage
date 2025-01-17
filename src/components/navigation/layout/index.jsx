@@ -95,7 +95,7 @@ export const Logo = styled.a`
 export const SubMenu = styled.div`
   position: absolute;
   height: auto;
-  width: 300px;
+  width:auto;
   border: 1px solid #fff;
   top: 10px;
   left: -128px;
