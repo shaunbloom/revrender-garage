@@ -20,7 +20,7 @@ import Bios from "./views/bios/index.jsx";
 import { useState } from "react";
 import styled from "@emotion/styled";
 import { NavLink, Spacer, SubHeader, SubLink, SubMenu } from "./components/navigation/layout/index.jsx";
-import { LinkContainer, LeftSideLinks, RightSideLinks } from "./views/products/layout/index.jsx";
+import { NavLinkContainer, LeftSideLinks, RightSideLinks } from "./views/products/layout/index.jsx";
 
 const ViewWrapper = styled.div`
     width: 100%;
@@ -104,7 +104,7 @@ function App() {
         showLogo={showLogo}
         setShowSubMenu={setShowSubMenu}
       >{showSubMenu && <SubMenu onMouseOut={() => setShowSubMenu(false)}>
-          <LinkContainer onMouseOver={() => setShowSubMenu(true)}>
+          <NavLinkContainer onMouseOver={() => setShowSubMenu(true)}>
             <LeftSideLinks onMouseOver={() => setShowSubMenu(true)}>
             <SubHeader className="header" onMouseOver={() => setShowSubMenu(true)}>Maddog Gen 1</SubHeader>
                 <SubLink className={shouldUnderLine("BLINKER_MOUNTS")} onClick={() => onSetCurrentView("BLINKER_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Double Blinker Mounts</SubLink>
@@ -128,7 +128,7 @@ function App() {
                 <SubLink className={shouldUnderLine("SPEEDO_MOUNTS")} onClick={() => onSetCurrentView("SPEEDO_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Speedo Mounts</SubLink>
                 <SubLink className={shouldUnderLine("SPEEDO_WIRE_HARNESS")} onClick={() => onSetCurrentView("SPEEDO_WIRE_HARNESS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Speedo Wire Harness</SubLink>
               </RightSideLinks>
-            </LinkContainer>
+            </NavLinkContainer>
           </SubMenu>}
       </Navigation>
       {renderView()}

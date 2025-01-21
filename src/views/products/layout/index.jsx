@@ -24,7 +24,15 @@ export const ProductHeader = styled.div`
     font-weight: bold;
 `;
 
+export const NavLinkContainer = styled.div`
+  display: flex; /* Enable Flexbox for horizontal alignment */
+  align-items: stretch; /* Makes all children the same height as the tallest one */
+  gap: 10px; /* Add space between left and right containers */
+`;
+
 export const LinkContainer = styled.div`
+  border: 1px solid #fff;
+  padding: 10px;
   display: flex; /* Enable Flexbox for horizontal alignment */
   align-items: stretch; /* Makes all children the same height as the tallest one */
   gap: 10px; /* Add space between left and right containers */
