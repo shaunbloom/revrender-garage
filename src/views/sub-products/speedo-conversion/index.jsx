@@ -113,7 +113,7 @@ const SpeedoConversion = ({
                 </Notes>
 
                 <Links>
-                  <BoldText>Amazon Speedo Link:</BoldText> <a href="https://a.co/d/2VwNNYf" target="_blank">https://a.co/d/2VwNNYf</a>
+                  <BoldText>Amazon Speedo Link:</BoldText> <a href="https://amzn.to/42iAHiA" target="_blank">https://a.co/d/2VwNNYf</a>
                 </Links>
 
                 <Price>

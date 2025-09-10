@@ -82,7 +82,7 @@ const FuelPumpMount = ({
           </Notes>
           <Links>
             <BoldText>Amazon link:</BoldText>
-            <a href="https://a.co/d/bZ6FQbI" target="_blank">Fuel pump</a>
+            <a href="https://amzn.to/3Vvtx77" target="_blank">Fuel pump</a>
           </Links>
           <Price>
             <BoldText>Single fuel pump mount:</BoldText> $20 (includes shipping)

@@ -120,11 +120,11 @@ const HeadlightMount = ({
             </Notes>
 
             <Links>
-              <BoldText>Amazon Link:</BoldText> <a href="https://www.amazon.com/dp/B09XLB2H9W" target="_blank">Encased LED Headlight</a>
+              <BoldText>Amazon Link:</BoldText> <a href="https://amzn.to/4m9Cldo" target="_blank">Encased LED Headlight</a>
             </Links>
 
             <Price>
-              <BoldText>Headlight mount:</BoldText> $30 (includes shipping)
+              <BoldText>Headlight mount:</BoldText> $35 (includes shipping)
             </Price>
         </Description>
     </Container>

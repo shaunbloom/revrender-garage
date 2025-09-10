@@ -93,12 +93,12 @@ const RuckusSingleBlinkerMounts = ({
           </p>
           <Links>
               <BoldText>Amazon link:</BoldText>
-              <a href="https://www.amazon.com/dp/B0BX8P4R6T?ref=ppx_yo2ov_dt_b_fed_asin_title" target="_blank">1 Pair of
+              <a href="https://amzn.to/3Kee9JA" target="_blank">1 Pair of
               back blinker lights</a>
           </Links>
           <Notes>
               <BoldText>Notes:</BoldText> If you want to match all of the blinkers front and back of the bike you can
-              order the following kit. Two <a href="https://www.amazon.com/dp/B0CHHW36X2?ref=ppx_yo2ov_dt_b_fed_asin_title" target="_blank">pairs
+              order the following kit. Two <a href="https://amzn.to/4gmgCOj" target="_blank">pairs
               (front and rear)</a>. The lights in the front are different from the back as they have white
               running lights and no brake light option.
           </Notes>
