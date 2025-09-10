@@ -3,6 +3,7 @@ import './App.css';
 import Splash from "./views/splash/index.jsx";
 import Products from "./views/products/index.jsx";
 import Mission from "./views/mission/index.jsx";
+import BrakeLightRelocationAdaptor from "./views/sub-products/brake-light-relocation-adaptor/index.jsx";
 import HeadlightMount from "./views/sub-products/headlight-mount/index.jsx";
 import SpeedoConversion from "./views/sub-products/speedo-conversion/index.jsx";
 import SpeedoCase from "./views/sub-products/speedo-case/index.jsx";
@@ -91,6 +92,8 @@ function App() {
             return <FuelPumpMount/>;
         case "HEADLIGHT_MOUNT":
             return <HeadlightMount/>;
+        case "BRAKE_LIGHT_RELOCATION_ADAPTOR":
+            return <BrakeLightRelocationAdaptor/>;
         default:
             return <Splash onNavClick={onNavClick} />;
         }
@@ -103,7 +106,7 @@ function App() {
         onNavClick={onNavClick}
         showLogo={showLogo}
         setShowSubMenu={setShowSubMenu}
-      >{showSubMenu && <SubMenu onMouseOut={() => setShowSubMenu(false)}>
+      >{showSubMenu && currentView != "PRODUCTS" && <SubMenu onMouseOut={() => setShowSubMenu(false)}>
           <NavLinkContainer onMouseOver={() => setShowSubMenu(true)}>
             <LeftSideLinks onMouseOver={() => setShowSubMenu(true)}>
             <SubHeader className="header" onMouseOver={() => setShowSubMenu(true)}>Maddog Gen 1</SubHeader>
@@ -113,6 +116,7 @@ function App() {
                 <SubLink className={shouldUnderLine("FUEL_PUMP_MOUNT")} onClick={() => onSetCurrentView("FUEL_PUMP_MOUNT")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Fuel Pump Mount</SubLink>
                 <Spacer onMouseOver={() => setShowSubMenu(true)}/>
             <SubHeader onMouseOver={() => setShowSubMenu(true)}>Ruckus</SubHeader>
+                <SubLink className={shouldUnderLine("BRAKE_LIGHT_RELOCATION_ADAPTOR")} onClick={() => onSetCurrentView("BRAKE_LIGHT_RELOCATION_ADAPTOR")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Brake Light Relocation Adaptor</SubLink>
                 <SubLink className={shouldUnderLine("RUCKUS_FRONT_BLINKER_MOUNTS")} onClick={() => onSetCurrentView("RUCKUS_FRONT_BLINKER_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Front Blinker Mounts</SubLink>
                 <SubLink className={shouldUnderLine("RUCKUS_SINGLE_BLINKER_MOUNTS")} onClick={() => onSetCurrentView("RUCKUS_SINGLE_BLINKER_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Single Rear Blinker Mounts</SubLink>
                 <SubLink className={shouldUnderLine("RUCKUS_DOUBLE_BLINKER_MOUNTS")} onClick={() => onSetCurrentView("RUCKUS_DOUBLE_BLINKER_MOUNTS")} onMouseOver={() => setShowSubMenu(true)} onMouseOut={() => setShowSubMenu(false)}>Double Rear Blinker Mounts</SubLink>

@@ -25,6 +25,9 @@ const Products = ({
                 </ProductLink>
                <ProductHeader>Ruckus</ProductHeader>
                 <ProductLink>
+                  - <a onClick={() => setCurrentView("BRAKE_LIGHT_RELOCATION_ADAPTOR")}>Brake Light Relocation Adaptor</a>
+                </ProductLink>
+                <ProductLink>
                   - <a onClick={() => setCurrentView("RUCKUS_FRONT_BLINKER_MOUNTS")}>Front Blinker Mounts</a>
                 </ProductLink>
                 <ProductLink>

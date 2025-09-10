@@ -97,8 +97,8 @@ export const SubMenu = styled.div`
   height: auto;
   width:auto;
   border: 1px solid #fff;
-  top: 10px;
-  left: -128px;
+  top: 15px;
+  left: -400px;
   background-color: #000;
   color: #fff;
   padding: 7px 12px;
