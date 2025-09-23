@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import FadingCarousel from '../../../components/carousel/index.jsx';
 import styled from "@emotion/styled";
-import { BoldText, Container, Description, ImageWrapper, Notes, Links, Price } from "../layout/index.jsx";
-
-const Title = styled.h2`
-    text-align: left;
-`;
+import { BoldText, Container, Description, ImageWrapper, Notes, Links, Price, ProductTitle } from "../layout/index.jsx";
 
 const BackgroundImage = styled.div`
   position: absolute;
@@ -51,7 +47,7 @@ const FuelPumpMount = ({
 
   return (
       <>
-        <Title>Maddog Gen 4 & 5 Fuel Pump Mount</Title>
+        <ProductTitle>Maddog Gen 4 & 5 Fuel Pump Mount</ProductTitle>
         <Container>
         <ImageWrapper>
           <BackgroundImage

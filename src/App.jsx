@@ -30,9 +30,19 @@ const ViewWrapper = styled.div`
 `;
 
 function App() {
-    const [currentView, setCurrentView] = useState("SPLASH");
+    const [product, setProduct] = useState("");
+    const [currentView, setCurrentView] = useState(product || "SPLASH");
     const [showSubMenu, setShowSubMenu] = useState(false);
     const [showLogo, setShowLogo] = useState(false);
+
+
+      useEffect(() => {
+        const params = new URLSearchParams(window.location.search);
+        const p = params.get("v") || "";
+        setProduct(p);
+        if (p) setCurrentView(p); // if you want the product to control the initial view
+      }, []); // runs once
+
 
     useEffect(() => {
         if (currentView === "SPLASH") {
@@ -41,14 +51,17 @@ function App() {
         } else {
             setShowLogo(true);
         }
+
     }, [currentView]);
 
     const onSetCurrentView = (view) => {
         setCurrentView(view);
+        setProduct("");
         setShowSubMenu(false);
     };
 
     const onNavClick = (view) => {
+        setProduct("");
         setCurrentView(view);
     };
 
@@ -57,6 +70,7 @@ function App() {
             return "underline";
         }
     }
+
 
     const renderView = () => {
         switch (currentView) {
@@ -104,6 +118,7 @@ function App() {
       <Navigation
         currentView={currentView}
         onNavClick={onNavClick}
+        product={product}
         showLogo={showLogo}
         setShowSubMenu={setShowSubMenu}
       >{showSubMenu && currentView != "PRODUCTS" && <SubMenu onMouseOut={() => setShowSubMenu(false)}>

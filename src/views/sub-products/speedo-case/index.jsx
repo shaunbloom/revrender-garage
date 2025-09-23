@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import FadingCarousel from '../../../components/carousel/index.jsx';
 import styled from "@emotion/styled";
-import { BoldText, Container, Description, ImageWrapper, Notes, Links, Price } from "../layout/index.jsx";
-
-const Title = styled.h2`
-    text-align: left;
-`;
+import { BoldText, Container, Description, ImageWrapper, Notes, Links, Price, ProductTitle } from "../layout/index.jsx";
 
 const BackgroundImage = styled.div`
   position: absolute;
@@ -70,7 +66,7 @@ const SpeedoConversion = ({
 
   return (
       <>
-      <Title>Speedometer Case</Title>
+      <ProductTitle>Speedometer Case</ProductTitle>
       <Container>
         <ImageWrapper>
           <BackgroundImage

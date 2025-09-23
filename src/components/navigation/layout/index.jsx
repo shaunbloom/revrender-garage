@@ -7,7 +7,8 @@ export const NavWrapper = styled.div`
     z-index: 1;
     width:100%; /* Specifies the width of the nav bar */
     display: flex; /* Enables flexbox layout */
-    align-items: center; /* Vertically centers items within the bar */
+    flex-direction: column;
+    align-items: stretch; /* Vertically centers items within the bar */
     justify-content: space-between; /* Evenly spaces out items */
     padding: 0 10px; /* Adds padding inside the nav bar */
     background-color: #000000; /* Sets background color */
@@ -106,4 +107,12 @@ export const SubMenu = styled.div`
 
 export const SubMenuWrapper = styled.div`
     position: relative;
+`;
+
+export const PurchaseBanner = styled.div`
+    width:100%;
+    background-color: yellow;
+    display:block;
+    margin-top: 55px;
+    color: #000;
 `;
