@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import FadingCarousel from '../../../components/carousel/index.jsx';
 import styled from "@emotion/styled";
-import { BoldText, Container, Description, ImageWrapper, Notes, Links, Price } from "../layout/index.jsx";
-
-const Title = styled.h2`
-    text-align: left;
-`;
+import { BoldText, Container, Description, ImageWrapper, Notes, Links, Price, ProductTitle } from "../layout/index.jsx";
 
 const BackgroundImage = styled.div`
   position: absolute;
@@ -51,7 +47,7 @@ const SpeedoWireHarness = ({
 
   return (
       <>
-      <Title>Speedometer Wiring Harness</Title>
+      <ProductTitle>Speedometer Wiring Harness</ProductTitle>
       <Container>
         <ImageWrapper>
           <BackgroundImage
@@ -70,8 +66,8 @@ const SpeedoWireHarness = ({
           play setup which makes it an incredibly quick and easy upgrade to install.
 
           <p>
-            For those looking to mount there own 88 speedometer you will just need the mount and the case. Wiring your
-            speedometer up to your bike will be up to you. That being said most of these electronics coming with
+            For those looking to mount there own 88mm speedometer you will just need the mount and the case. Wiring your
+            speedometer up to your bike will be up to you. That being said most of these electronics come with
             excellent wiring diagrams which should allow you to repin the speedo to match the GY6 9 pin connector.
             GY6 wiring diagrams can be found on the web.
           </p>

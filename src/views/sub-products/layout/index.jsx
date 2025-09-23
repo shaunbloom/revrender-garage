@@ -50,3 +50,8 @@ export const BoldText = styled.span`
   margin: 10px 5px 10px 0;
   display: inline;
 `;
+
+export const ProductTitle = styled.h2`
+  margin-top:120px;
+  text-align: left;
+`;
