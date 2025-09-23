@@ -50,7 +50,7 @@ const products = ["BLINKER_MOUNTS",
         if (currentView == "SPLASH" || currentView === "PRODUCTS" || currentView === "MISSION" || currentView === "BIOS") {
             return false;
         }
-        if (product && !products.indexOf(product) >= 0) {
+        if (product && products.indexOf(product) < 0) {
             return false;
         }
         return true;
